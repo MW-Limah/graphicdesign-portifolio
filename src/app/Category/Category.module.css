@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--base-color);
+  padding: var(--padding-section);
+  margin-top: 4rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 700px;
+}
+
+.cards a {
+  background-color: var(--base-color);
+  padding: 5rem;
+  font-size: 24pt;
+  text-align: center;
+  font-family: var(--font-contentmenu);
+  transition: var(--transition);
+}
+
+.cards a:focus {
+  color: var(--highlighted-color);
+}
+
+/* texts */
+
+.texts {
+  display: flex;
+  justify-self: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 4rem;
+}
+
+.texts h2 {
+  text-align: center;
+  font-family: var(--font-title);
+  font-size: var(--font-size-titulo);
+}
+
+.texts p {
+  font-family: var(--font-paragraphs);
+  font-size: var(--font-size-subtitle);
+  text-align: justify;
+  word-spacing: 8px;
+}

@@ -1,0 +1,39 @@
+.header {
+  padding-top: 60px;
+  background-color: var(--base-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.asideleft {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.asideright {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.asideleft h2 {
+  font-family: var(--font-navbar);
+  font-size: 40pt;
+  line-height: 2.5rem;
+}
+
+.asideleft h1 {
+  font-family: var(--font-name);
+  font-size: 40pt;
+}
+
+.asideleft h3 {
+  font-family: var(--font-profile);
+  font-size: 18pt;
+  color: var(--highlighted-color);
+}
