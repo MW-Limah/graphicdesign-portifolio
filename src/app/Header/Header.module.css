@@ -37,3 +37,30 @@
   font-size: 18pt;
   color: var(--highlighted-color);
 }
+
+/* DIVISÓRIA */
+
+.divisoria {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.halfquad {
+  width: 250px;
+  height: 300px;
+  border-left: 50px solid var(--background);
+  border-bottom: 50px solid var(--background);
+  background: none;
+  transform: rotate(45deg);
+}
+
+.halfquad2 {
+  width: 165px;
+  height: 250px;
+  border-left: 50px solid var(--background);
+  border-bottom: 50px solid var(--background);
+  background: none;
+  transform: rotate(45deg);
+}

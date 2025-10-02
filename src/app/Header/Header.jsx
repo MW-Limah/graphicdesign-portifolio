@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
-import Image from "next/image";
+/* import Image from "next/image"; */
 
 export default function Header() {
   return (
@@ -10,12 +10,8 @@ export default function Header() {
         <h3>Graphic Designer | I.T. Technician</h3>
       </div>
       <span className={styles.divisoria}>
-        <Image
-          src="/divisoria.png"
-          alt="Header divider"
-          width={200}
-          height={200}
-        />
+        <span className={styles.halfquad}></span>
+        <span className={styles.halfquad2}></span>
       </span>
       <div className={styles.asideright}></div>
     </header>
