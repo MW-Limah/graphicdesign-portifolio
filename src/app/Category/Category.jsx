@@ -3,9 +3,9 @@ import styles from "./Category.module.css";
 
 export default function Category() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="categories">
       <div className={styles.cards}>
-        <Link href={"/"}>Web Design</Link>
+        <Link href={"#webdesign"}>Web Design</Link>
         <Link href={"/"}>Logo and Icons</Link>
         <Link href={"/"}>Stationarry Desing</Link>
       </div>

@@ -3,6 +3,7 @@
   justify-content: center;
   background-color: var(--base-color);
   padding: var(--padding-section);
+  padding-top: 8rem;
 }
 
 .cards {

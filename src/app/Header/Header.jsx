@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 
 export default function Header() {
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id="home">
       <div className={styles.asideleft}>
         <h2>Hi, my name is</h2>
         <h1>Williams de Lima.</h1>

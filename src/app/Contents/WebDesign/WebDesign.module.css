@@ -21,6 +21,12 @@
 
 /* Project Section */
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
 .project {
   padding: var(--padding-section);
   background-color: var(--base-color);
@@ -30,7 +36,7 @@
 .leftside {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex: 1;
   text-align: justify;
@@ -73,9 +79,20 @@
     "item2 portrait";
   gap: 1rem; /* opcional para espaçamento */
 }
+.grid2 {
+  display: grid;
+  grid-template-columns: 260px 250px;
+  grid-template-rows: 260px 260px;
+  grid-template-areas:
+    "item1 item2"
+    "item3 item4";
+  gap: 1rem; /* opcional para espaçamento */
+}
 
 .item1,
-.item2 {
+.item2,
+.item3,
+.item4 {
   width: 260px;
   height: 260px;
   background-color: var(--base-color);

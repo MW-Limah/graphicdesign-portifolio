@@ -22,3 +22,7 @@ body {
   color: var(--font-color);
   font-family: var(--font-paragraphs);
 }
+
+html {
+  scroll-behavior: smooth;
+}
