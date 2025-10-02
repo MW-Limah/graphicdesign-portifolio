@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.presentation {
+  padding: var(--padding-section);
+}
+
+.presentation h1 {
+  font-size: var(--font-size-titulo);
+  font-family: var(--font-title);
+}
+
+.presentation p {
+  font-size: var(--font-size-subtitle);
+  text-align: justify;
+}
+
+/* Project Section */
+
+.project {
+  padding: var(--padding-section);
+  background-color: var(--base-color);
+  display: flex;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: justify;
+}
+
+.leftside h2 {
+  font-family: var(--font-title);
+  font-size: var(--font-size-titulo);
+  margin-bottom: 1rem;
+}
+
+.leftside p {
+  margin-bottom: 2rem;
+  font-family: var(--font-paragraphs);
+  font-size: var(--font-size-subtitle);
+  word-spacing: 8px;
+}
+
+.imglands {
+  margin-top: 4rem;
+  height: 280px;
+  width: 600px;
+  background-color: var(--base-color);
+}
+
+.rightside {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 260px 250px;
+  grid-template-rows: 260px 260px;
+  grid-template-areas:
+    "item1 portrait"
+    "item2 portrait";
+  gap: 1rem; /* opcional para espaçamento */
+}
+
+.item1,
+.item2 {
+  width: 260px;
+  height: 260px;
+  background-color: var(--base-color);
+}
+
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+
+.portrait {
+  grid-area: portrait;
+  width: 250px;
+  height: 536px;
+  background-color: var(--base-color);
+  align-self: stretch;
+  margin-left: 0;
+}

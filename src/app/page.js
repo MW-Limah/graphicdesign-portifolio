@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Navbar from "./Navbar/Navbar";
 import Header from "./Header/Header";
 import Category from "./Category/Category";
+import WebDesign from "./Contents/WebDesign/WebDesign";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           </p>
         </section>
         <Category />
+        <WebDesign />
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import styles from "./WebDesign.module.css";
 export default function WebDesign() {
   return (
     <div className={styles.container}>
-      <article className={styles.container}>
+      <article className={styles.presentation}>
         <h1>Projects: Web Design</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
@@ -12,9 +12,10 @@ export default function WebDesign() {
           aliquid corporis!
         </p>
       </article>
+
       {/* Project 1 */}
-      <section>
-        <aside>
+      <section className={styles.project}>
+        <aside className={styles.leftside}>
           <h2>Project 1 - EducaMap</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est hic
@@ -22,20 +23,15 @@ export default function WebDesign() {
             deserunt ipsa sunt dolorem quia fugit adipisci! Repudiandae nihil
             quis voluptates sequi?
           </p>
-          <div>{/* Imagem em landscape */}</div>
+          <div className={styles.imglands}></div>
         </aside>
-        <aside>
-          <div>
-            {/* Grid 1 */}
-            <div></div>
-            <div></div>
-            <div></div>
+        <aside className={styles.rightside}>
+          <div className={styles.grid}>
+            <div className={styles.item1}></div>
+            <div className={styles.item2}></div>
+            <div className={styles.portrait}></div>
           </div>
         </aside>
-      </section>
-      {/* Project 2 */}
-      <section>
-        <article></article>
       </section>
     </div>
   );
