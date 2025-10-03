@@ -81,9 +81,9 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Navbar />
+      <Header />
       <div className={styles.content}>
-        <Header />
-        <section className={styles.section} id="home">
+        <section className={styles.section}>
           <p className={styles.titulo}>Profile</p>
           <p className={styles.paragraph}>
             I am a graphic designer with a passion for creating visually...
