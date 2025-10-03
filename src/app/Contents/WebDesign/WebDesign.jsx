@@ -24,48 +24,43 @@ export default function WebDesign() {
                 academic paper, it addresses the challenge of finding reliable
                 information and connecting ideas. With a writing area and AI
                 tools, EducaMap will organize data, check accuracy, and improve
-                the coherence of students' research. It will also have an
-                interface that helps students focus without having to open
-                multiple browser windows. It will also have a mobile version.
+                the coherence of students' research.
               </p>
             </div>
-            <div className={styles.down}>
-              <div className={styles.imglands}>
-                <Image
-                  src={"/educamap/interface-landscape.png"}
-                  width={600}
-                  height={250}
-                  alt="EducaMap Landscape"
-                ></Image>
-              </div>
+            <div className={styles.imglands}>
+              <Image
+                src="/educamap/interface-landscape.png"
+                alt="EducaMap Landscape"
+                fill
+                style={{ objectFit: "contain" }}
+              />
             </div>
           </aside>
           <aside className={styles.rightside}>
             <div className={styles.grid}>
               <div className={styles.item1}>
                 <Image
-                  src={"/educamap/educamap-logo.png"}
-                  width={250}
-                  height={250}
+                  src="/educamap/educamap-logo.png"
                   alt="EducaMap Logo"
-                ></Image>
+                  fill
+                  style={{ objectFit: "contain" }}
+                />
               </div>
               <div className={styles.item2}>
-                {" "}
                 <Image
-                  src={"/educamap/research-area.png"}
-                  width={250}
-                  height={250}
+                  src="/educamap/research-area.png"
                   alt="EducaMap Research Area"
-                ></Image>
+                  fill
+                  style={{ objectFit: "contain" }}
+                />
               </div>
               <div className={styles.portrait}>
                 <Image
-                  src={"/educamap/interface-portrait.png"}
-                  width={250}
-                  height={400}
-                  alt="EducaMap Writter Area"
-                ></Image>
+                  src="/educamap/interface-portrait.png"
+                  alt="EducaMap Portrait"
+                  fill
+                  style={{ objectFit: "contain" }}
+                />
               </div>
             </div>
           </aside>
@@ -89,34 +84,34 @@ export default function WebDesign() {
             <div className={styles.grid2}>
               <div className={styles.item1}>
                 <Image
-                  src={"/e-invite/1.png"}
-                  width={250}
-                  height={250}
+                  src="/e-invite/1.png"
                   alt="Invite 1"
+                  fill
+                  style={{ objectFit: "contain" }}
                 />
               </div>
               <div className={styles.item2}>
                 <Image
-                  src={"/e-invite/2.png"}
-                  width={250}
-                  height={250}
+                  src="/e-invite/2.png"
                   alt="Invite 2"
+                  fill
+                  style={{ objectFit: "contain" }}
                 />
               </div>
               <div className={styles.item3}>
                 <Image
-                  src={"/e-invite/3.png"}
-                  width={250}
-                  height={250}
+                  src="/e-invite/3.png"
                   alt="Invite 3"
+                  fill
+                  style={{ objectFit: "contain" }}
                 />
               </div>
               <div className={styles.item4}>
                 <Image
-                  src={"/e-invite/4.png"}
-                  width={250}
-                  height={250}
+                  src="/e-invite/4.png"
                   alt="Invite 4"
+                  fill
+                  style={{ objectFit: "contain" }}
                 />
               </div>
             </div>
@@ -129,27 +124,27 @@ export default function WebDesign() {
             <div className={styles.grid}>
               <div className={styles.item1}>
                 <Image
-                  src={"/ecommerce/ecommerce-logo.png"}
-                  width={250}
-                  height={250}
+                  src="/ecommerce/ecommerce-logo.png"
                   alt="Ecommerce Logo"
+                  fill
+                  style={{ objectFit: "contain" }}
                 />
               </div>
               <div className={styles.item2}>
                 <Image
-                  src={"/ecommerce/selected-items.png"}
-                  width={250}
-                  height={250}
+                  src="/ecommerce/selected-items.png"
                   alt="Selected Items"
+                  fill
+                  style={{ objectFit: "contain" }}
                 />
               </div>
               <div className={styles.portrait}>
                 <Image
-                  src={"/ecommerce/ecommerce-portrait.png"}
-                  width={300}
-                  height={400}
+                  src="/ecommerce/ecommerce-portrait.png"
                   alt="Ecommerce Portrait"
-                ></Image>
+                  fill
+                  style={{ objectFit: "contain" }}
+                />
               </div>
             </div>
           </aside>
@@ -164,11 +159,11 @@ export default function WebDesign() {
             </p>
             <div className={styles.imglands}>
               <Image
-                src={"/ecommerce/ecommerce-landscape.png"}
-                width={800}
-                height={250}
+                src="/ecommerce/ecommerce-landscape.png"
                 alt="Ecommerce Landscape"
-              ></Image>
+                fill
+                style={{ objectFit: "contain" }}
+              />
             </div>
           </aside>
         </section>
