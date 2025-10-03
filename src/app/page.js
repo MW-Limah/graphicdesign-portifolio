@@ -5,6 +5,7 @@ import Category from "./Category/Category";
 import WebDesign from "./Contents/WebDesign/WebDesign";
 import LogoAndIcons from "./Contents/LogoAndIcons/LogoAndIcons";
 import Stationary from "./Contents/Stationary/Stationary";
+import Footer from "./Footer/Footer";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <WebDesign />
         <LogoAndIcons />
         <Stationary />
+        <Footer />
       </div>
     </div>
   );

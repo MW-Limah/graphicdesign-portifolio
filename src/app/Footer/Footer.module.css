@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-section);
+}
+
+.footer h2 {
+  font-family: var(--font-title);
+  font-size: var(--font-size-titulo);
+}
+
+.footer p {
+  font-family: var(--font-paragraphs);
+  font-size: var(--font-size-subtitle);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 4rem;
+}
+
+.linha {
+  border-top: 3px solid #fff;
+  margin-top: 2rem;
+  height: 20px;
+}
+
+.rights {
+  text-align: center;
+  font-family: var(--font-paragraphs);
+  font-size: var(--font-size-subtitle);
+  margin-top: 1rem;
+}
