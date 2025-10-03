@@ -27,14 +27,11 @@ export default function Category({ onSelectCategory }) {
       <div className={styles.texts}>
         <h2>Design Categories</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-          ipsum unde tenetur. Nostrum doloribus autem ex, ad quos repellendus,
-          quidem reiciendis, possimus officiis error numquam? Ratione ullam quos
-          mollitia ex. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Quidem ipsam consequuntur tempore nisi reiciendis. Rem molestias
-          facilis sed eum, facere consequuntur, sint blanditiis tenetur nisi
-          expedita veritatis qui magni libero.
+          Over the years, as I developed my interest in Graphic Design and
+          worked to establish myself in the field, I explored a variety of
+          styles and disciplines. Among these, the areas I specialize in are
+          stationery design, logo, icon and brand identity design, and, more
+          recently, web design.
         </p>
       </div>
     </div>
