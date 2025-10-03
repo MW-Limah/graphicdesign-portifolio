@@ -66,7 +66,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 260px 250px;
+  grid-template-columns: 260px 260px;
   grid-template-rows: 260px 260px;
   grid-template-areas:
     "item1 portrait"
@@ -75,7 +75,7 @@
 }
 .grid2 {
   display: grid;
-  grid-template-columns: 260px 250px;
+  grid-template-columns: 260px 260px;
   grid-template-rows: 260px 260px;
   grid-template-areas:
     "item1 item2"
@@ -85,7 +85,7 @@
 
 .imglands {
   width: 100%;
-  max-width: 800px;
+  max-width: 650px;
   aspect-ratio: 16/9; /* controla proporção */
   position: relative;
   margin-top: auto;
@@ -94,7 +94,7 @@
 .imglands img {
   width: 100%;
   height: auto;
-  object-fit: contain; /* mantém proporção sem cortar */
+  object-fit: cover; /* mantém proporção sem cortar */
 }
 .item1,
 .item2,
@@ -124,14 +124,15 @@
 
 .portrait {
   grid-area: portrait;
-  width: 300px;
+  width: 400px;
   aspect-ratio: 3/4; /* retrato */
   position: relative;
   margin-left: 0;
 }
 
 .portrait img {
-  object-fit: cover;
+  object-fit: contain;
+  object-position: left center; /* encosta na esquerda */
   width: 100%;
   height: 100%;
 }

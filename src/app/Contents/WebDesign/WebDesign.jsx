@@ -32,7 +32,7 @@ export default function WebDesign() {
                 src="/educamap/interface-landscape.png"
                 alt="EducaMap Landscape"
                 fill
-                style={{ objectFit: "contain" }}
+                style={{ objectFit: "cover" }}
               />
             </div>
           </aside>
