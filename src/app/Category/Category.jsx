@@ -6,8 +6,8 @@ export default function Category() {
     <div className={styles.container} id="categories">
       <div className={styles.cards}>
         <Link href={"#webdesign"}>Web Design</Link>
-        <Link href={"/"}>Logo and Icons</Link>
-        <Link href={"/"}>Stationarry Desing</Link>
+        <Link href={"#logoandicons"}>Logo and Icons</Link>
+        <Link href={"#stationary"}>Stationarry Desing</Link>
       </div>
       <div className={styles.texts}>
         <h2>Design Categories</h2>

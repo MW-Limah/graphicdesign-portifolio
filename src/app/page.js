@@ -3,6 +3,8 @@ import Navbar from "./Navbar/Navbar";
 import Header from "./Header/Header";
 import Category from "./Category/Category";
 import WebDesign from "./Contents/WebDesign/WebDesign";
+import LogoAndIcons from "./Contents/LogoAndIcons/LogoAndIcons";
+import Stationary from "./Contents/Stationary/Stationary";
 
 export default function Home() {
   return (
@@ -24,6 +26,8 @@ export default function Home() {
         </section>
         <Category />
         <WebDesign />
+        <LogoAndIcons />
+        <Stationary />
       </div>
     </div>
   );
