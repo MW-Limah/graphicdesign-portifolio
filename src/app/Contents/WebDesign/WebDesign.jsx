@@ -30,14 +30,43 @@ export default function WebDesign() {
               </p>
             </div>
             <div className={styles.down}>
-              <div className={styles.imglands}></div>
+              <div className={styles.imglands}>
+                <Image
+                  src={"/educamap/interface-landscape.png"}
+                  width={600}
+                  height={250}
+                  alt="EducaMap Landscape"
+                ></Image>
+              </div>
             </div>
           </aside>
           <aside className={styles.rightside}>
             <div className={styles.grid}>
-              <div className={styles.item1}></div>
-              <div className={styles.item2}></div>
-              <div className={styles.portrait}></div>
+              <div className={styles.item1}>
+                <Image
+                  src={"/educamap/educamap-logo.png"}
+                  width={250}
+                  height={250}
+                  alt="EducaMap Logo"
+                ></Image>
+              </div>
+              <div className={styles.item2}>
+                {" "}
+                <Image
+                  src={"/educamap/research-area.png"}
+                  width={250}
+                  height={250}
+                  alt="EducaMap Research Area"
+                ></Image>
+              </div>
+              <div className={styles.portrait}>
+                <Image
+                  src={"/educamap/interface-portrait.png"}
+                  width={250}
+                  height={400}
+                  alt="EducaMap Writter Area"
+                ></Image>
+              </div>
             </div>
           </aside>
         </section>
@@ -98,9 +127,30 @@ export default function WebDesign() {
         <section className={styles.project}>
           <aside className={styles.rightside}>
             <div className={styles.grid}>
-              <div className={styles.item1}></div>
-              <div className={styles.item2}></div>
-              <div className={styles.portrait}></div>
+              <div className={styles.item1}>
+                <Image
+                  src={"/ecommerce/ecommerce-logo.png"}
+                  width={250}
+                  height={250}
+                  alt="Ecommerce Logo"
+                />
+              </div>
+              <div className={styles.item2}>
+                <Image
+                  src={"/ecommerce/selected-items.png"}
+                  width={250}
+                  height={250}
+                  alt="Selected Items"
+                />
+              </div>
+              <div className={styles.portrait}>
+                <Image
+                  src={"/ecommerce/ecommerce-portrait.png"}
+                  width={300}
+                  height={400}
+                  alt="Ecommerce Portrait"
+                ></Image>
+              </div>
             </div>
           </aside>
           <aside className={styles.leftside}>
@@ -112,7 +162,14 @@ export default function WebDesign() {
               design was created in Canva, marking the beginning of my journey
               into web design.
             </p>
-            <div className={styles.imglands}></div>
+            <div className={styles.imglands}>
+              <Image
+                src={"/ecommerce/ecommerce-landscape.png"}
+                width={800}
+                height={250}
+                alt="Ecommerce Landscape"
+              ></Image>
+            </div>
           </aside>
         </section>
       </div>
