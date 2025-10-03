@@ -13,16 +13,17 @@
   min-width: 700px;
 }
 
-.cards a {
+.cards button {
   background-color: var(--base-color);
   padding: 5rem;
   font-size: 24pt;
   text-align: center;
   font-family: var(--font-contentmenu);
   transition: var(--transition);
+  cursor: pointer;
 }
 
-.cards a:focus {
+.cards button:focus {
   color: var(--highlighted-color);
 }
 

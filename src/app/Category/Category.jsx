@@ -1,13 +1,28 @@
-import Link from "next/link";
 import styles from "./Category.module.css";
 
-export default function Category() {
+export default function Category({ onSelectCategory }) {
+  const handleClick = (category) => {
+    // troca a categoria
+    onSelectCategory(category);
+
+    // aguarda renderizar e faz scroll suave
+    setTimeout(() => {
+      const el = document.getElementById(category);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 50);
+  };
   return (
     <div className={styles.container} id="categories">
       <div className={styles.cards}>
-        <Link href={"#webdesign"}>Web Design</Link>
-        <Link href={"#logoandicons"}>Logo and Icons</Link>
-        <Link href={"#stationary"}>Stationarry Desing</Link>
+        <button onClick={() => handleClick("webdesign")}>Web Design</button>
+        <button onClick={() => handleClick("logoandicons")}>
+          Logo and Icons
+        </button>
+        <button onClick={() => handleClick("stationary")}>
+          Stationary Design
+        </button>
       </div>
       <div className={styles.texts}>
         <h2>Design Categories</h2>

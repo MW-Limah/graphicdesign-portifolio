@@ -10,11 +10,12 @@
   font-size: 18pt;
   font-family: var(--font-navbar);
   background-color: var(--background);
+  z-index: 999;
 }
 
 .navbar a {
   transition: var(--transition);
 }
-.navbar a:focus {
+.active {
   color: var(--highlighted-color);
 }

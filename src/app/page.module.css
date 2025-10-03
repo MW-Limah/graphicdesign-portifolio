@@ -11,3 +11,9 @@
   font-size: var(--font-size-subtitle);
   text-align: justify;
 }
+
+.transitionWrapper {
+  position: relative;
+  min-height: 400px; /* garante espaço */
+  overflow: hidden; /* corta conteúdo durante movimento */
+}
