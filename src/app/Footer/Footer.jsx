@@ -12,7 +12,10 @@ export default function Footer() {
       <div className={styles.icons}>
         <ul>
           <li>
-            <a href="">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/mauricio-de-lima-b20251347/?locale=en_US"
+            >
               <Image
                 width={40}
                 height={40}
@@ -22,7 +25,7 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href="">
+            <a target="_blank" href="https://wa.me/+447386797717">
               <Image
                 width={40}
                 height={40}
@@ -32,7 +35,7 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href="">
+            <a target="_blank" href="https://www.instagram.com/mwlima.dev/">
               <Image
                 width={40}
                 height={40}
@@ -42,7 +45,7 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href="">
+            <a target="_blank" href="https://github.com/MW-Limah">
               <Image
                 width={40}
                 height={40}
