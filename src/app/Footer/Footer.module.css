@@ -39,3 +39,39 @@
   font-size: var(--font-size-subtitle);
   margin-top: 1rem;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--padding-section-query);
+    text-align: left; /* centraliza tudo */
+    flex-direction: column;
+  }
+
+  .footer h2 {
+    font-size: var(--font-size-titulo-query);
+  }
+
+  .footer p {
+    font-size: var(--font-size-subtitle-query);
+  }
+
+  .icons img {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .icons ul {
+    flex-direction: row;
+    gap: 1rem; /* menos espaço entre ícones */
+    margin-top: 2rem; /* reduz espaço acima dos ícones */
+  }
+
+  .linha {
+    margin-top: 1rem; /* reduz espaço antes da linha */
+    height: 10px; /* altura menor */
+  }
+
+  .rights {
+    font-size: var(--font-size-subtitle-query);
+    margin-top: 0.5rem;
+  }
+}

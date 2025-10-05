@@ -88,11 +88,9 @@ export default function Home() {
           <p className={styles.paragraph}>
             I am a design professional with over two years of experience in the
             field. Motivated and enthusiastic, I am constantly exploring new
-            horizons and discovering creative ways to view the world. I am
-            passionate about developing artistic materials and visually
-            expressing what a company, individual, or service wants to
-            communicate. Challenges are not obstacles — they are opportunities
-            to grow, innovate, and surpass expectations.
+            horizons and discovering creative ways to view the world. Challenges
+            are not obstacles — they are opportunities to grow, innovate, and
+            surpass expectations.
           </p>
         </section>
 

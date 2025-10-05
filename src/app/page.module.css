@@ -17,3 +17,18 @@
   min-height: 400px; /* garante espaço */
   overflow: hidden; /* corta conteúdo durante movimento */
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--padding-section-query);
+  }
+  .titulo {
+    font-size: var(--font-size-titulo-query);
+    font-family: var(--font-title);
+  }
+
+  .paragraph {
+    font-size: var(--font-size-subtitle-query);
+    text-align: justify;
+  }
+}

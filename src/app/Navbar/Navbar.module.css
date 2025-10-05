@@ -19,3 +19,9 @@
 .active {
   color: var(--highlighted-color);
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 12pt;
+  }
+}

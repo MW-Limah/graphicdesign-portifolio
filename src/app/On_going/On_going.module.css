@@ -13,6 +13,12 @@
   animation: bouncing 5s infinite;
 }
 
+@media (max-width: 768px) {
+  .ongoing h1 {
+    font-size: var(--font-size-titulo-query);
+  }
+}
+
 @keyframes bouncing {
   0% {
     transform: scale(1);

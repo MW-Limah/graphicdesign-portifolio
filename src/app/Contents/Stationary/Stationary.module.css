@@ -132,3 +132,85 @@
   width: 100%;
   height: 100%;
 }
+@media (max-width: 768px) {
+  .presentation {
+    padding: var(--padding-section-query);
+  }
+
+  .presentation h1 {
+    font-size: var(--font-size-titulo-query);
+    text-align: center;
+  }
+
+  .presentation p {
+    font-size: var(--font-size-subtitle-query);
+    text-align: justify;
+  }
+
+  .projects {
+    gap: 2rem;
+  }
+
+  .project {
+    padding: var(--padding-section-query);
+    flex-direction: column; /* força texto + imagem + grid em coluna */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .leftside {
+    order: 1; /* texto primeiro */
+    text-align: center;
+  }
+
+  .leftside h2 {
+    font-size: var(--font-size-titulo-query);
+    text-align: left;
+  }
+
+  .leftside p {
+    text-align: left;
+    font-size: var(--font-size-subtitle-query);
+  }
+
+  .rightside {
+    order: 2; /* grid / imagens depois */
+    margin-bottom: 0; /* sem espaçamento extra */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid,
+  .grid2 {
+    grid-template-columns: 120px 120px; /* reduz tamanho das cards */
+    grid-template-rows: 120px 120px;
+    gap: 0.5rem;
+    margin-bottom: 0; /* remove espaço extra */
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    width: 220px;
+    height: 120px;
+    margin-top: 0; /* remove espaçamento extra */
+  }
+
+  .portrait {
+    width: 150px;
+    aspect-ratio: 9/16;
+    margin-left: 0;
+  }
+
+  .portrait img,
+  .item1 img,
+  .item2 img,
+  .item3 img,
+  .item4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
