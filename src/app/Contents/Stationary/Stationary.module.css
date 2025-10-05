@@ -89,9 +89,20 @@
 .item2,
 .item3,
 .item4 {
+  margin-top: 20px;
   width: 450px;
-  height: 220px;
+  height: 250px;
   background-color: var(--base-color);
+  position: relative; /* necessário para Image do Next.js com layout fill */
+}
+
+.item1 img,
+.item2 img,
+.item3 img,
+.item4 img {
+  object-fit: cover; /* garante que a imagem cubra toda a div */
+  width: 100%;
+  height: 100%;
 }
 
 .item1 {
@@ -101,13 +112,23 @@
   grid-area: item2;
 }
 
-.item3,
-.item4 {
-  margin-left: -10rem;
-}
 .item3 {
   grid-area: item3;
 }
 .item4 {
   grid-area: item4;
+}
+
+.portrait {
+  grid-area: portrait;
+  width: 350px;
+  aspect-ratio: 9/16; /* retrato */
+  position: relative;
+  margin-left: 0;
+}
+
+.portrait img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }

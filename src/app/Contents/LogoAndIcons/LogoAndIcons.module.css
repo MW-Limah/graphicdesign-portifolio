@@ -116,3 +116,7 @@
   align-self: stretch;
   margin-left: 0;
 }
+
+.ongoing {
+  width: 100%;
+}
