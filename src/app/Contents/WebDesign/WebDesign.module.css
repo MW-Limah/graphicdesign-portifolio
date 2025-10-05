@@ -61,11 +61,12 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .grid {
   display: grid;
+  align-items: flex-end;
   grid-template-columns: 260px 260px;
   grid-template-rows: 260px 260px;
   grid-template-areas:
@@ -76,6 +77,7 @@
 .grid2 {
   display: grid;
   grid-template-columns: 260px 260px;
+  align-items: flex-end;
   grid-template-rows: 260px 260px;
   grid-template-areas:
     "item1 item2"

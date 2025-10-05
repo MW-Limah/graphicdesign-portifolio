@@ -16,17 +16,16 @@ export default function WebDesign() {
         {/* Project 1 */}
         <section className={styles.project}>
           <aside className={styles.leftside}>
-            <div className={styles.up}>
-              <h2>Project 1 - EducaMap</h2>
-              <p>
-                <strong>EducaMap</strong> is an ongoing project that helps
-                students conduct structured research. Originating from an
-                academic paper, it addresses the challenge of finding reliable
-                information and connecting ideas. With a writing area and AI
-                tools, EducaMap will organize data, check accuracy, and improve
-                the coherence of students' research.
-              </p>
-            </div>
+            <h2>Project 1 - EducaMap</h2>
+            <p>
+              <strong>EducaMap</strong> is an ongoing project that helps
+              students conduct structured research. Originating from an academic
+              paper, it addresses the challenge of finding reliable information
+              and connecting ideas. With a writing area and AI tools, EducaMap
+              will organize data, check accuracy, and improve the coherence of
+              students' research.
+            </p>
+
             <div className={styles.imglands}>
               <Image
                 src="/educamap/interface-landscape.png"
