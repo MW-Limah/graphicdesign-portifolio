@@ -13,9 +13,7 @@ export default function Header() {
         <Image
           src="/divisoria.png"
           alt="Divisoria"
-          width={100}
-          height={100}
-          quality={100}
+          fill
           className={styles.divisoria}
         />
       </div>
