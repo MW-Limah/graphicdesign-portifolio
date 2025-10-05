@@ -1,66 +1,93 @@
+/* HEADER BASE */
 .header {
   padding-top: 60px;
   background-color: var(--base-color);
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
   height: 500px;
+  position: relative; /* necessário p/ colocar imagem atrás no mobile */
+  overflow: hidden;
 }
 
+/* TEXTO */
 .asideleft {
-  flex: 2;
+  flex: 4; /* 80% */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.asideright {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  z-index: 2; /* garante que fica sobre a imagem no mobile */
 }
 
 .asideleft h2 {
   font-family: var(--font-navbar);
-  font-size: 40pt;
+  font-size: 2.5rem;
   line-height: 2.5rem;
 }
 
 .asideleft h1 {
   font-family: var(--font-name);
-  font-size: 40pt;
+  font-size: 2.5rem;
 }
 
 .asideleft h3 {
   font-family: var(--font-profile);
-  font-size: 18pt;
+  font-size: 1.2rem;
   color: var(--highlighted-color);
 }
 
-/* DIVISÓRIA */
+/* IMAGEM */
+.asideright {
+  flex: 1; /* 20% no desktop */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .divisoria {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  margin-bottom: 50px;
+  width: 400px;
+  height: 500px;
+  object-fit: contain;
 }
 
-.halfquad {
-  width: 250px;
-  height: 300px;
-  border-left: 50px solid var(--background);
-  border-bottom: 50px solid var(--background);
-  background: none;
-  transform: rotate(45deg);
-}
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* organiza em coluna */
+    padding-top: 20px;
+    height: 50vh; /* ocupa tela toda se quiser, ou ajuste conforme imagem */
+  }
 
-.halfquad2 {
-  width: 165px;
-  height: 250px;
-  border-left: 50px solid var(--background);
-  border-bottom: 50px solid var(--background);
-  background: none;
-  transform: rotate(45deg);
+  .asideleft h2 {
+    font-size: 1.5rem;
+  }
+
+  .asideleft h1 {
+    font-size: 1.8rem;
+  }
+
+  .asideleft h3 {
+    font-size: 1rem;
+  }
+
+  .asideright {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: translate(-50%, -50%); /* centraliza no meio */
+    width: 200px; /* controla tamanho */
+    height: 500px; /* controla tamanho */
+    z-index: 1;
+    opacity: 0.3; /* mais suave */
+    pointer-events: none;
+  }
+
+  .divisoria {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
