@@ -15,15 +15,6 @@ export default function Category({ onSelectCategory }) {
   };
   return (
     <div className={styles.container} id="categories">
-      <div className={styles.cards}>
-        <button onClick={() => handleClick("webdesign")}>Web Design</button>
-        <button onClick={() => handleClick("logoandicons")}>
-          Logo and Icons
-        </button>
-        <button onClick={() => handleClick("stationary")}>
-          Stationary Design
-        </button>
-      </div>
       <div className={styles.texts}>
         <h2>Design Categories</h2>
         <p>
@@ -34,6 +25,15 @@ export default function Category({ onSelectCategory }) {
           recently, web design.
         </p>
         <p>How about taking a look at some projects?</p>
+      </div>
+      <div className={styles.cards}>
+        <button onClick={() => handleClick("webdesign")}>Web Design</button>
+        <button onClick={() => handleClick("logoandicons")}>
+          Logo and Icons
+        </button>
+        <button onClick={() => handleClick("stationary")}>
+          Stationary Design
+        </button>
       </div>
     </div>
   );

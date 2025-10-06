@@ -4,7 +4,8 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className={styles.footer} id="contact">
-      <h2>Well, thanks for making it this far.</h2>
+      <h2>Hey, thank you for coming here.</h2>
+      <p>This is still a somewhat experimental and very basic design.</p>
       <p>
         Don't forget that you can always contact me using the contact details
         provided here. I'm always ready to help!

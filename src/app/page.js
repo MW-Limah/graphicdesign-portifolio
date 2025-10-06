@@ -9,6 +9,7 @@ import WebDesign from "./Contents/WebDesign/WebDesign";
 import LogoAndIcons from "./Contents/LogoAndIcons/LogoAndIcons";
 import Stationary from "./Contents/Stationary/Stationary";
 import Footer from "./Footer/Footer";
+import BackButton from "./ButtonBack/ButtonBack";
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("webdesign");
@@ -83,6 +84,7 @@ export default function Home() {
       <Navbar />
       <Header />
       <div className={styles.content}>
+        <BackButton />
         <section className={styles.section}>
           <p className={styles.titulo}>Profile</p>
           <p className={styles.paragraph}>
