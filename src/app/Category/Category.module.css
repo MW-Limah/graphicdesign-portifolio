@@ -48,7 +48,7 @@
   font-family: var(--font-paragraphs);
   font-size: var(--font-size-subtitle);
   text-align: justify;
-  word-spacing: 8px;
+  word-spacing: 6px;
 }
 /* --- Mobile --- */
 @media (max-width: 768px) {
@@ -80,6 +80,6 @@
 
   .texts p {
     font-size: var(--font-size-subtitle-query);
-    text-align: justify;
+    text-align: left;
   }
 }

@@ -19,12 +19,12 @@ export default function WebDesign() {
           <aside className={styles.leftside}>
             <h2>Project 1 - EducaMap</h2>
             <p>
-              <strong>EducaMap</strong> is an ongoing project that helps
-              students conduct structured research. Originating from an academic
-              paper, it addresses the challenge of finding reliable information
-              and connecting ideas. With a writing area and AI tools, EducaMap
-              will organize data, check accuracy, and improve the coherence of
-              students' research.
+              EducaMap is a student-focused project with a more direct, compact,
+              and functional design that unites research and writing areas.
+              <br />
+              The visual identity is based on blue—a color associated with
+              tranquility, wisdom, and credibility—reinforcing the brand's
+              educational and inspirational purpose
             </p>
 
             <div className={styles.imglands}>

@@ -8,12 +8,10 @@ export default function Stationary() {
       <article className={styles.presentation}>
         <h1>Projects: Print Design and Stationary</h1>
         <p>
-          Started my career in print design, working with clients on projects
-          such as business cards, flyers, banners, and resumes. Gained hands-on
-          experience delivering high-quality printed materials tailored to
-          client needs, building a strong foundation in design and production
-          processes. Beyond design, I also managed the printing and finishing
-          stages, ensuring professional results from concept to final product.
+          I began my career in graphic design, working with clients on projects
+          such as business cards, flyers, banners, and resumes. Besides design,
+          I also managed the printing and finishing stages, ensuring
+          professional results from concept to final product.
         </p>
       </article>
       <div className={styles.projects}>
