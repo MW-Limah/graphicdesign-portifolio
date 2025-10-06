@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import styles from "./ButtonBack.module.css";
+import { BiArrowToTop } from "react-icons/bi";
 
 export default function BackButton() {
   const [isVisible, setIsVisible] = useState();
@@ -21,7 +22,7 @@ export default function BackButton() {
       className={styles.returnTop}
       aria-label="Back to categories"
     >
-      Select another category.
+      <BiArrowToTop />
     </a>
   );
 }
