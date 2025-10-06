@@ -31,9 +31,9 @@ export default function Category({ onSelectCategory }) {
           worked to establish myself in the field, I explored a variety of
           styles and disciplines. Among these, the areas I specialize in are
           stationery design, logo, icon and brand identity design, and, more
-          recently, web design. <br />
-          Selecione ao lado o que mais te interessa ver.
+          recently, web design.
         </p>
+        <p>How about taking a look at some projects?</p>
       </div>
     </div>
   );

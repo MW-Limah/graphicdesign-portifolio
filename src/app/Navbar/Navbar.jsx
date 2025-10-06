@@ -5,13 +5,15 @@ import Link from "next/link";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
+  const [showNavbar, setShowNavbar] = useState(true); // novo estado
+  const lastScrollY = useRef(0); // armazena a posição anterior do scroll
   const activeRef = useRef(activeSection);
+
   useEffect(() => {
     activeRef.current = activeSection;
   }, [activeSection]);
 
   useEffect(() => {
-    // IDs que queremos checar
     const ids = [
       "home",
       "categories",
@@ -20,17 +22,14 @@ export default function Navbar() {
       "stationary",
       "contact",
     ];
-
     let ticking = false;
 
     const updateActive = () => {
-      // manter Home ativo enquanto scrollY === 0
       if (window.scrollY === 0) {
         if (activeRef.current !== "home") setActiveSection("home");
         return;
       }
 
-      // marcar Contact quando estiver no final da página
       if (
         window.innerHeight + window.scrollY >=
         document.body.offsetHeight - 50
@@ -39,25 +38,21 @@ export default function Navbar() {
         return;
       }
 
-      // ponto central da viewport (você pode trocar para outro ponto se preferir)
       const centerY = window.innerHeight / 2;
-
       let foundId = null;
 
       for (const id of ids) {
         const el = document.getElementById(id);
-        if (!el) continue; // elemento pode não existir por causa do AnimatePresence
+        if (!el) continue;
         const rect = el.getBoundingClientRect();
-        // se o centro da viewport estiver dentro do elemento, consideramos ele ativo
         if (rect.top <= centerY && rect.bottom >= centerY) {
           foundId = id;
           break;
         }
       }
 
-      if (!foundId) return; // nada encontrado (ex: seções muito pequenas)
+      if (!foundId) return;
 
-      // mapear as IDs dos conteúdos para a aba "categories"
       if (
         ["categories", "webdesign", "logoandicons", "stationary"].includes(
           foundId
@@ -77,6 +72,20 @@ export default function Navbar() {
       if (!ticking) {
         window.requestAnimationFrame(() => {
           updateActive();
+
+          // Navbar retrátil (aparece/ some)
+          if (window.innerWidth <= 768) {
+            // só para celular
+            if (window.scrollY > lastScrollY.current) {
+              // scroll para baixo → esconder
+              setShowNavbar(false);
+            } else {
+              // scroll para cima → mostrar
+              setShowNavbar(true);
+            }
+            lastScrollY.current = window.scrollY;
+          }
+
           ticking = false;
         });
         ticking = true;
@@ -84,17 +93,13 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });
-
-    // roda uma vez na montagem para setar o estado inicial corretamente
     updateActive();
 
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${!showNavbar ? styles.hidden : ""}`}>
       <Link
         href="#home"
         className={activeSection === "home" ? styles.active : ""}

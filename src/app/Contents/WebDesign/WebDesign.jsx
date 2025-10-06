@@ -1,5 +1,6 @@
 import styles from "./WebDesign.module.css";
 import Image from "next/image";
+import OnGoing from "../../On_going/On_going";
 
 export default function WebDesign() {
   return (
@@ -165,6 +166,9 @@ export default function WebDesign() {
               />
             </div>
           </aside>
+        </section>
+        <section className={styles.project}>
+          <OnGoing />
         </section>
       </div>
     </div>

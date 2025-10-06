@@ -8,10 +8,9 @@ export default function LogoAndIcons() {
       <article className={styles.presentation}>
         <h1>Projects: Brand Identity, Logo and Icons</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
-          ducimus doloremque alias provident et, quidem doloribus odit ipsa
-          cupiditate, dignissimos minima rerum hic vero, sed facere eius natus
-          aliquid corporis!
+          Studying Grid Layout and Visual Identity was an important step for me.
+          I discovered that you can convey a lot with just a few well-placed
+          images.
         </p>
       </article>
       <div className={styles.projects}>
