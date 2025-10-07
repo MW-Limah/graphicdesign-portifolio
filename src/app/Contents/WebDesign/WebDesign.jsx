@@ -165,6 +165,11 @@ export default function WebDesign() {
                 style={{ objectFit: "contain" }}
               />
             </div>
+            <div className={styles.visit}>
+              <a href="https://lojaheloisa.vercel.app/" target="_blank">
+                Visit here
+              </a>
+            </div>
           </aside>
         </section>
         <section className={styles.project}>

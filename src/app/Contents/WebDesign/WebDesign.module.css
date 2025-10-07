@@ -225,3 +225,17 @@
     height: 100%;
   }
 }
+
+.visit {
+  font-weight: 600;
+  font-size: var(--font-size-subtitle);
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: var(--base-color);
+  transition: var(--transition);
+  z-index: 5;
+}
+
+.visit:hover {
+  transform: scale(1.08);
+}
