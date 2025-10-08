@@ -25,6 +25,7 @@ export default function Category({ onSelectCategory }) {
           recently, web design.
         </p>
         <p>How about taking a look at some projects?</p>
+        <p>Click on one of the cards below to see</p>
       </div>
       <div className={styles.cards}>
         <button onClick={() => handleClick("webdesign")}>Web Design</button>

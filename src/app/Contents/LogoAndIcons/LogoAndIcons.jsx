@@ -151,33 +151,36 @@ export default function LogoAndIcons() {
           </aside>
         </section>
 
+        <section className={styles.project}>
+          <aside className={styles.leftside}>
+            <h2> Experimental project.</h2>
+            <p>
+              The goal was to apply a style that was different from what I'm
+              used to and challenge myself. I used a more organic style, with
+              vectorized lines and colors.
+            </p>
+          </aside>
+          <aside className={styles.rightside}>
+            <div className={styles.grid2}>
+              <div className={styles.item1b}>
+                <Image
+                  src={"/style_fashion/1.png"}
+                  width={500}
+                  height={400}
+                  alt="1"
+                  style={{
+                    objectFit: "contain",
+                  }}
+                ></Image>
+              </div>
+            </div>
+          </aside>
+        </section>
         {/* Project 3 */}
         <section className={styles.project}>
           <div className={styles.ongoing}>
             <OnGoing />
           </div>
-          {/*  <aside className={styles.leftside}>
-            <h2>Party invitation</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
-              obcaecati aut impedit? Necessitatibus, facere. Soluta explicabo
-              tempora magnam officia id, incidunt, labore expedita, optio non
-              consequatur eius dolore dicta ducimus.
-            </p>
-          </aside>
-          <aside className={styles.rightside}>
-            <div className={styles.grid}>
-              <div className={styles.itemI}></div>
-              <div className={styles.item2}></div>
-              <div className={styles.item3}></div>
-              <div className={styles.item4}></div>
-              <div className={styles.item5}></div>
-              <div className={styles.item6}></div>
-              <div className={styles.item7}></div>
-              <div className={styles.item8}></div>
-              <div className={styles.itemI}></div>
-            </div>
-          </aside> */}
         </section>
       </div>
     </div>

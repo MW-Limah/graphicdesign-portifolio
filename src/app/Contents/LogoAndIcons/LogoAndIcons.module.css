@@ -178,10 +178,23 @@
   }
 
   .grid2 {
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
-    gap: 0rem;
-    margin-bottom: 0;
+    display: flex;
+    width: 500px;
+    height: 500px;
+  }
+
+  .item1b {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 21 / 9; /* ou 16/9 →  maior e mais "wide" */
+    max-height: 500px; /* aumenta o limite */
+    overflow: hidden;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+  }
+
+  .item1b {
+    object-fit: contain;
   }
 
   .item1,
