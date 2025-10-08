@@ -80,6 +80,24 @@
   gap: 2rem; /* opcional para espaçamento */
 }
 
+.grid2 {
+  display: flex;
+  width: 500px;
+  height: 300px;
+}
+
+.item1b {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 21 / 9; /* ou 16/9 →  maior e mais "wide" */
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.item1b {
+  object-fit: contain;
+}
+
 .itemI {
   visibility: hidden;
 }
@@ -179,17 +197,15 @@
 
   .grid2 {
     display: flex;
-    width: 500px;
-    height: 500px;
+    width: 15rem;
+    height: auto;
   }
 
   .item1b {
     position: relative;
     width: 100%;
-    aspect-ratio: 21 / 9; /* ou 16/9 →  maior e mais "wide" */
-    max-height: 500px; /* aumenta o limite */
+    aspect-ratio: 2 / 1; /* ou 16/9 →  maior e mais "wide" */
     overflow: hidden;
-    border-radius: 12px;
     margin-top: 1.5rem;
   }
 

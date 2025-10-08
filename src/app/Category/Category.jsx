@@ -20,12 +20,12 @@ export default function Category({ onSelectCategory }) {
         <p>
           Over the years, as I developed my interest in Graphic Design and
           worked to establish myself in the field, I explored a variety of
-          styles and disciplines. Among these, the areas I specialize in are
-          stationery design, logo, icon and brand identity design, and, more
+          styles and disciplines. <br /> Among these, the areas I specialize in
+          are stationery design, logo, icon and brand identity design, and, more
           recently, web design.
         </p>
         <p>How about taking a look at some projects?</p>
-        <p>Click on one of the cards below to see</p>
+        <p>Click on one of the cards to view</p>
       </div>
       <div className={styles.cards}>
         <button onClick={() => handleClick("webdesign")}>Web Design</button>

@@ -88,11 +88,10 @@ export default function Home() {
         <section className={styles.section}>
           <p className={styles.titulo}>Profile</p>
           <p className={styles.paragraph}>
-            I am a design professional with over two years of experience in the
-            field. Motivated and enthusiastic, I am constantly exploring new
-            horizons and discovering creative ways to view the world. Challenges
-            are not obstacles — they are opportunities to grow, innovate, and
-            surpass expectations.
+            Professional designer with over two years of experience in the
+            field. Constantly exploring new horizons and discovering creative
+            ways of seeing the world. <br /> Challenges are not obstacles — they
+            are opportunities to grow, innovate, and exceed expectations.
           </p>
         </section>
 
